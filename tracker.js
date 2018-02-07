@@ -15,5 +15,8 @@
 // locationLoop(model);
 
 navigator.geolocation.watchPosition((pos) => {
-    document.getElementById('monitor').innerHTML(JSON.stringify(pos));
+    console.log(pos);
+    document.getElementById('monitor').innerHTML = `lat: ${pos.coords.latitude}<br>
+                                                    long: ${pos.coords.longitude}<br>
+                                                    speed: ${pos.coords.speed}`;
 });
