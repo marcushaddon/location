@@ -16,7 +16,7 @@
 
 navigator.geolocation.watchPosition((pos) => {
     console.log(pos);
-    document.getElementById('monitor').innerHTML = `lat: ${pos.coords.latitude}<br>
-                                                    long: ${pos.coords.longitude}<br>
-                                                    speed: ${pos.coords.speed}`;
+    document.getElementById('monitor').innerHTML = `<h3>lat: ${pos.coords.latitude}</h3>
+                                                    <h3>long: ${pos.coords.longitude}</h3>
+                                                    <h3>speed: ${pos.coords.speed}</h3>`;
 });
