@@ -2,14 +2,25 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
-
-    <script type='text/javascript' src='tracker.js'></script>
+    <title>Location Test</title>
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' />
+    
   </head>
   <body>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-sm-12'>
+                <h1>location:</h1>
+                <div id='monitor'></div>
+                <div id='distancetopin'></div>
 
-    <h1>location:</h1>
-    <div id='monitor'></div>
+                <button id='drop-pin'>Drop Pin</button>
+                <button onclick="nearPin()">Near a pin?</button>
+            </div>
+        </div>
+    </div>
+    
   
+    <script type='text/javascript' src='tracker.js'></script>
   </body>
 </html>
